@@ -6,7 +6,7 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-heart_disease_model = pickle.load(open("heart_disease_model.sav","rb"))
+heart_disease_model = pickle.load(open("saved models/heart_disease_model.sav","rb"))
 
 parkinsons_model = pickle.load(open("C:/Users/HP/Downloads/drive-download-20231004T090159Z-001/colab files/parkinsons_model.sav","rb"))
 
