@@ -1,25 +1,14 @@
 # -*- coding: utf-8 -*-
-#-*- coding: utf-8 -*-
-"""
-Created on Sun May 22 11:53:51 2022
-
-@author: siddhardhan
-"""
 
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-
 # loading the saved models
-
-
 
 heart_disease_model = pickle.load(open("C:/Users/HP/Downloads/drive-download-20231004T090159Z-001/colab files/heart_disease_model.sav","rb"))
 
 parkinsons_model = pickle.load(open("C:/Users/HP/Downloads/drive-download-20231004T090159Z-001/colab files/parkinsons_model.sav","rb"))
-
-cnn = pickle.load(open("C:/Users/HP/Downloads/cnn.pkl"))
 
 
 # sidebar for navigation
@@ -29,19 +18,16 @@ with st.sidebar:
                           
                           ['HOME',
                            'Heart Disease Prediction',
-                           'cnn'],
+                           'PARKISON'],
                           icons=['activity','heart','person'],
                           default_index=0)
     
-    
-# Diabetes Prediction Page
+
 if (selected == 'HOME'):
     
     # page title
     st.title('HOME')
     
-   
-
 
 
 # Heart Disease Prediction Page
